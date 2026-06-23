@@ -1,0 +1,20 @@
+# ── Azure SDKs ────────────────────────────────────────────────────────────────
+azure-storage-blob>=12.19.0
+azure-identity>=1.15.0
+
+# Preview SDK required for Knowledge Source, Knowledge Base, and
+# KnowledgeBaseRetrievalClient (2026-05-01-preview features)
+# Install with: pip install --pre azure-search-documents
+azure-search-documents>=12.0.0b8
+
+# ── Azure OpenAI ──────────────────────────────────────────────────────────────
+openai>=1.30.0
+
+# ── Text / NLP ────────────────────────────────────────────────────────────────
+pyahocorasick>=2.0.0          # Aho-Corasick multi-keyword scan
+python-dotenv>=1.0.0
+
+# NOTE: Use the preview package for agentic retrieval:
+#   pip install --pre azure-search-documents
+# This installs the version that ships KnowledgeBaseRetrievalClient,
+# SearchIndexKnowledgeSource, KnowledgeBase, and related models.
